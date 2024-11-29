@@ -33,5 +33,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Target GitHub Pages branch
-          folder: build     # Build output folder
+          folder: dist     # Build output folder
           token: ${{ secrets.GITHUB_TOKEN }}
