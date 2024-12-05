@@ -2,6 +2,7 @@
   "name": "cv",
   "private": true,
   "version": "0.0.1",
+  "homepage": "https://bertoramos.github.io/cv/",
   "type": "module",
   "scripts": {
     "dev": "vite",
