@@ -36,7 +36,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <HashRouter>
+    <HashRouter basename="/cv">
       <div>
         <ul>
           <li>
