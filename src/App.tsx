@@ -37,20 +37,6 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <HashRouter>
-      <div>
-        <ul>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-        </ul>
-
-        <hr />
 
         {/*
           A <Switch> looks through all its children <Route>
@@ -59,18 +45,16 @@ const App: React.FC = () => (
           you have multiple routes, but you want only one
           of them to render at a time
         */}
-        <Switch>
-          <Route path="/home">
-            <h1>HOME</h1>
+
+          <Route path="/">
+            <Home title="Home" />
           </Route>
           <Route path="/about">
-            <h1>ABOUT</h1>
+            <Home title="About" />
           </Route>
           <Route path="/dashboard">
-            <h1>DASHBOARD</h1>
+            <Home title="Dashboard" />
           </Route>
-        </Switch>
-      </div>
     </HashRouter>
   </IonApp>
 );
