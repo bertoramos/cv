@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # Allows pushing to the repository
+  pages: write     # Allows pushing to GitHub Pages
+
 jobs:
   build:
     name: Build
