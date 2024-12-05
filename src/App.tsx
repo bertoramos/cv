@@ -40,7 +40,7 @@ const App: React.FC = () => (
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -60,14 +60,14 @@ const App: React.FC = () => (
           of them to render at a time
         */}
         <Switch>
-          <Route exact path="/">
-            <Home />
+          <Route path="/home">
+            <h1>HOME</h1>
           </Route>
           <Route path="/about">
-            <Home />
+            <h1>ABOUT</h1>
           </Route>
           <Route path="/dashboard">
-            <Home />
+            <h1>DASHBOARD</h1>
           </Route>
         </Switch>
       </div>
