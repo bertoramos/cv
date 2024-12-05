@@ -1,6 +1,5 @@
-import { BrowserRouter, Link, Redirect, Route, Switch } from 'react-router-dom';
+import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
@@ -37,7 +36,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <BrowserRouter basename="/cv">
+    <HashRouter>
       <div>
         <ul>
           <li>
@@ -72,21 +71,7 @@ const App: React.FC = () => (
           </Route>
         </Switch>
       </div>
-    </BrowserRouter>
-    {/*
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    
-    </IonReactRouter>
-    */}
-    
+    </HashRouter>
   </IonApp>
 );
 
