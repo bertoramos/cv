@@ -1,8 +1,6 @@
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import Home from './pages/Home';
-import SnapScrollExample from './pages/SnapScrollExample';
-
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,33 +31,34 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Template from './components/Template';
+import SnapScrollExample from './pages/SnapScrollExample';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <HashRouter>
-
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
-
-          <Route path="/">
-            <Home title="Home" />
-          </Route>
+      <Route path="/">
+        <Template title="Home" content={<Home />} />
+      </Route>
+      <Route path="/about">
+        <Template title="About" content={<Home />} />
+      </Route>
+      <Route path="/dashboard">
+        <Template title="Dashboard" content={<Home />} />
+      </Route>
+      <Route path="/snap-scroll-example">
+        <SnapScrollExample />
+      </Route>
+      {/*
           <Route path="/about">
             <Home title="About" />
           </Route>
           <Route path="/dashboard">
             <Home title="Dashboard" />
           </Route>
-          <Route path="/snap-scroll-example">
-            <SnapScrollExample />
-          </Route>
+      */}
     </HashRouter>
   </IonApp>
 );
