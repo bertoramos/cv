@@ -1,0 +1,26 @@
+/* Contenedor que maneja el scroll y el snap */
+.snap-container {
+    display: flex;
+    flex-direction: column;
+    /* Organiza los elementos en vertical */
+    overflow-y: scroll;
+    /* Habilita desplazamiento vertical */
+    scroll-snap-type: y mandatory;
+    /* Habilita el comportamiento snap vertical */
+    height: 100%;
+    /* Ocupa todo el área disponible del IonContent */
+}
+
+.snap-section {
+    flex: 0 0 100%;
+    /* Asegura que cada tarjeta ocupe todo el tamaño del contenedor */
+    scroll-snap-align: start;
+    /* Alinea al inicio del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centra el contenido de la tarjeta */
+    
+    
+    border:1px solid red;
+}

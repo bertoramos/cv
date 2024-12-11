@@ -1,6 +1,8 @@
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import Home from './pages/Home';
+import SnapScrollExample from './pages/SnapScrollExample';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -54,6 +56,9 @@ const App: React.FC = () => (
           </Route>
           <Route path="/dashboard">
             <Home title="Dashboard" />
+          </Route>
+          <Route path="/snap-scroll-example">
+            <SnapScrollExample />
           </Route>
     </HashRouter>
   </IonApp>

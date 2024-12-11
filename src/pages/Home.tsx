@@ -20,6 +20,9 @@ const Home: React.FC<{ title: string }> = ({ title }) => {
             <li>
               <Link to="/dashboard">Dashboard</Link>
             </li>
+            <li>
+              <Link to="/snap-scroll-example">Snap Scroll Example</Link>
+            </li>
           </ul>
         </IonToolbar>
       </IonHeader>
