@@ -33,11 +33,13 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 import Template from './components/Template';
 import SnapScrollExample from './pages/SnapScrollExample';
+import MainMenu from './components/MainMenu';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
+    <MainMenu></MainMenu>
     <HashRouter>
       <Route path="/">
         <Template title="Home" content={<Home />} />

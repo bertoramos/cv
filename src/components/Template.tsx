@@ -8,7 +8,7 @@ const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title
     <IonPage id="main-content">
       
 
-      <IonHeader>      
+      <IonHeader>
         <IonToolbar>
           <IonTitle>{title}</IonTitle>
           <ul>
