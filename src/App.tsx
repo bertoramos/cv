@@ -33,13 +33,25 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 import Template from './components/Template';
 import SnapScrollExample from './pages/SnapScrollExample';
-import MainMenu from './components/MainMenu';
+import MainMenuButton from './components/MainMenuButton';
+import MainMenuContent from './components/MainMenuContent';
+import React from 'react';
 
 setupIonicReact();
 
-const App: React.FC = () => (
+const App: React.FC = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleMainMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+  
   <IonApp>
-    <MainMenu></MainMenu>
+    <MainMenuButton isOpen={isOpen} toggleMainMenu={toggleMainMenu} />
+    <MainMenuContent isOpen={isOpen} toggleMainMenu={() => setIsOpen(!isOpen)} />
+
     <HashRouter>
       <Route path="/">
         <Template title="Home" content={<Home />} />
@@ -63,6 +75,7 @@ const App: React.FC = () => (
       */}
     </HashRouter>
   </IonApp>
-);
+)
+};
 
 export default App;
