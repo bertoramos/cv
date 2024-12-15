@@ -2,6 +2,7 @@ import React from 'react';
 import './MainMenu.css';
 
 import { addClass, removeClass, hasClass } from '../utils/refsUtils';
+import { Link } from 'react-router-dom';
 
 const MainMenu: React.FC = () => {
 
@@ -10,7 +11,7 @@ const MainMenu: React.FC = () => {
   const toggleMainMenu = () => {
     setIsOpen(!isOpen);
   };
-  
+
   return (
     <>
       <div onClick={toggleMainMenu} className="button-container">
@@ -18,10 +19,18 @@ const MainMenu: React.FC = () => {
       </div>
       <div id="main-menu" className={isOpen ? "menu-active" : "menu-inactive"}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Services</li>
+          <li>
+            <a href="/cv/#/" onClick={toggleMainMenu}>Home</a>
+          </li>
+          <li>
+            <a href="/cv/#/about" onClick={toggleMainMenu}>About</a>
+          </li>
+          <li>
+            <a href="/cv/#/dashboard" onClick={toggleMainMenu}>Dashboard</a>
+          </li>
+          <li>
+            <a href="/cv/#/snap-scroll-example" onClick={toggleMainMenu}>Snap Scroll Example</a>
+          </li>
         </ul>
       </div>
     </>
