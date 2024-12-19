@@ -1,0 +1,14 @@
+#main_header {
+    height: 10%;
+    @media screen and (max-width: 768px) {
+        height: 8%;
+    }
+    background-color: red;
+}
+
+#main_logo {
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    padding: 1% 1% 1% 1%;
+}

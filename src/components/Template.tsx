@@ -1,25 +1,20 @@
-import { IonMenu, IonContent, IonHeader, IonPage, IonToolbar, IonTitle, IonMenuButton, IonButtons } from '@ionic/react';
-import { Link } from 'react-router-dom';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonHeader, IonPage, IonIcon } from '@ionic/react';
 import React from 'react';
-import MainMenuButton from './MainMenuButton';
-import MainMenuContent from './MainMenuContent';
+
+import { logoIonic } from 'ionicons/icons';
+
+import "./Template.css";
 
 const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title, content }) => {
 
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const toggleMainMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-
   return (
-    
-      <IonPage>
 
+    <IonPage>
 
-        <IonHeader>
+      <IonHeader id="main_header">
+        <IonIcon id="main_logo" icon={logoIonic} color="primary" size="large"></IonIcon>
+        {
+        /*
           <IonToolbar>
             <IonTitle>{title}</IonTitle>
             <ul>
@@ -37,17 +32,21 @@ const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title
               </li>
             </ul>
           </IonToolbar>
-        </IonHeader>
+        */
+        }
+      </IonHeader>
 
-        {/*
+      {/*
         <IonContent fullscreen>
         <ExploreContainer />
         It contains {title} page
       </IonContent>
       */}
-        {content}
-      </IonPage>
       
+      {content}
+      
+    </IonPage>
+
   );
 };
 
