@@ -55,7 +55,7 @@ const App: React.FC = () => {
       <HashRouter>
         <Route path="/">
           <Template title="Home" content={
-            <IonContent>
+            <IonContent style={{ "--background": "#0f9" }}>
               Home
             </IonContent>
           }/>
