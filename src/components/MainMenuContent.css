@@ -37,6 +37,13 @@
 
     opacity: 1;
     transition: opacity 0.5s ease-in-out, display 0s ease-in-out 0.5s;
+
+    a {
+        opacity: 1;
+        transform: translateY(0px);
+
+        transition: transform 2s ease-in-out, opacity 0.8s ease-in-out;
+    }
 }
 
 .menu-inactive {
@@ -44,4 +51,11 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, display 0s ease-in-out 0.5s;
+
+    a {
+        opacity: 0;
+        transform: translateY(-1000px);
+
+        transition: transform 2s ease-in-out, opacity 0.8s ease-in-out;
+    }
 }
