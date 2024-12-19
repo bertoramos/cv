@@ -13,10 +13,10 @@ const MainMenuContent: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }>
                     <a href="/cv/#/about" onClick={toggleMainMenu}>About</a>
                 </li>
                 <li>
-                    <a href="/cv/#/dashboard" onClick={toggleMainMenu}>Dashboard</a>
+                    <a href="/cv/#/experience" onClick={toggleMainMenu}>Experience</a>
                 </li>
                 <li>
-                    <a href="/cv/#/snap-scroll-example" onClick={toggleMainMenu}>Snap Scroll Example</a>
+                    <a href="/cv/#/projects" onClick={toggleMainMenu}>Projects</a>
                 </li>
             </ul>
         </div>

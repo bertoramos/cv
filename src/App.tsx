@@ -1,6 +1,5 @@
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { IonApp, IonContent, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -37,6 +36,12 @@ import MainMenuButton from './components/MainMenuButton';
 import MainMenuContent from './components/MainMenuContent';
 import React from 'react';
 
+import Home  from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Experience from './pages/Experience';
+
+
 setupIonicReact();
 
 const App: React.FC = () => {
@@ -54,17 +59,16 @@ const App: React.FC = () => {
 
       <HashRouter>
         <Route path="/">
-          <Template title="Home" content={
-            <IonContent style={{ "--background": "#0f9" }}>
-              Home
-            </IonContent>
-          }/>
+          <Template title="Home" content={<Home />}/>
         </Route>
         <Route path="/about">
-          <Template title="About" content={<IonContent>About</IonContent>} />
+          <Template title="About" content={<About />} />
         </Route>
-        <Route path="/dashboard">
-          <Template title="Dashboard" content={<IonContent>Dashboard</IonContent>} />
+        <Route path="/projects">
+          <Template title="Projects" content={<Projects />} />
+        </Route>
+        <Route path="/experience">
+          <Template title="Experience" content={<Experience />} />
         </Route>
         <Route path="/snap-scroll-example">
           <SnapScrollExample />
