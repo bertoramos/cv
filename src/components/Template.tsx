@@ -4,6 +4,7 @@ import React from 'react';
 import { logoIonic } from 'ionicons/icons';
 
 import "./Template.css";
+import { Link } from 'react-router-dom';
 
 const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title, content }) => {
 
@@ -12,27 +13,29 @@ const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title
     <IonPage>
 
       <IonHeader id="main_header">
-        <IonIcon id="main_logo" icon={logoIonic} color="primary" size="large"></IonIcon>
+        <Link to="/">
+          <IonIcon id="main_logo" icon={logoIonic} color="primary"></IonIcon>
+        </Link>
         {
-        /*
-          <IonToolbar>
-            <IonTitle>{title}</IonTitle>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/dashboard">Dashboard</Link>
-              </li>
-              <li>
-                <Link to="/snap-scroll-example">Snap Scroll Example</Link>
-              </li>
-            </ul>
-          </IonToolbar>
-        */
+          /*
+            <IonToolbar>
+              <IonTitle>{title}</IonTitle>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/dashboard">Dashboard</Link>
+                </li>
+                <li>
+                  <Link to="/snap-scroll-example">Snap Scroll Example</Link>
+                </li>
+              </ul>
+            </IonToolbar>
+          */
         }
       </IonHeader>
 
@@ -42,9 +45,9 @@ const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title
         It contains {title} page
       </IonContent>
       */}
-      
+
       {content}
-      
+
     </IonPage>
 
   );

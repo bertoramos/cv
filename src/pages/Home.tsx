@@ -1,3 +1,4 @@
+
 import { IonContent } from '@ionic/react';
 
 const Home: React.FC = () => {

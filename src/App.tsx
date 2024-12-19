@@ -47,29 +47,29 @@ const App: React.FC = () => {
   };
 
   return (
-  
-  <IonApp>
-    <MainMenuButton isOpen={isOpen} toggleMainMenu={toggleMainMenu} />
-    <MainMenuContent isOpen={isOpen} toggleMainMenu={() => setIsOpen(!isOpen)} />
 
-    <HashRouter>
-      <Route path="/">
-        <Template title="Home" content={
-          <IonContent>
-            Home
-          </IonContent>
-        } />
-      </Route>
-      <Route path="/about">
-        <Template title="About" content={<IonContent>About</IonContent>} />
-      </Route>
-      <Route path="/dashboard">
-        <Template title="Dashboard" content={<IonContent>Dashboard</IonContent>} />
-      </Route>
-      <Route path="/snap-scroll-example">
-        <SnapScrollExample />
-      </Route>
-      {/*
+    <IonApp>
+      <MainMenuButton isOpen={isOpen} toggleMainMenu={toggleMainMenu} />
+      <MainMenuContent isOpen={isOpen} toggleMainMenu={() => setIsOpen(!isOpen)} />
+
+      <HashRouter>
+        <Route path="/">
+          <Template title="Home" content={
+            <IonContent>
+              Home
+            </IonContent>
+          }/>
+        </Route>
+        <Route path="/about">
+          <Template title="About" content={<IonContent>About</IonContent>} />
+        </Route>
+        <Route path="/dashboard">
+          <Template title="Dashboard" content={<IonContent>Dashboard</IonContent>} />
+        </Route>
+        <Route path="/snap-scroll-example">
+          <SnapScrollExample />
+        </Route>
+        {/*
           <Route path="/about">
             <Home title="About" />
           </Route>
@@ -77,9 +77,9 @@ const App: React.FC = () => {
             <Home title="Dashboard" />
           </Route>
       */}
-    </HashRouter>
-  </IonApp>
-)
+      </HashRouter>
+    </IonApp>
+  )
 };
 
 export default App;
