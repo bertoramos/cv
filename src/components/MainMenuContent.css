@@ -1,6 +1,6 @@
 #main-menu {
     z-index: 1;
-    
+
     background-color: rgb(0, 188, 150);
     width: 100%;
     height: 100%;
@@ -38,11 +38,9 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out, display 0s ease-in-out 0.5s;
 
-    a {
-        opacity: 1;
-        transform: translateY(0px);
-
-        transition: transform 2s ease-in-out, opacity 0.8s ease-in-out;
+    .text span {
+        transform: translateY(0%);
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -52,10 +50,37 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out, display 0s ease-in-out 0.5s;
 
-    a {
-        opacity: 0;
-        transform: translateY(-1000px);
-
-        transition: transform 2s ease-in-out, opacity 0.8s ease-in-out;
+    .text span {
+        transform: translateY(100%);
+        transition: all 0.5s ease-in-out;
     }
+}
+
+.text-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    list-style: none;
+    /* Opcional: eliminar los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.text-container {
+    margin: 10px 0;
+    /* Espaciado entre elementos */
 }

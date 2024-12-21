@@ -1,22 +1,33 @@
 import React from 'react';
 
 import "./MainMenuContent.css";
+import { TextReveal } from './TextReveal';
+import { a } from 'react-router-dom';
+import { toggle } from 'ionicons/icons';
 
 const MainMenuContent: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }> = ({ toggleMainMenu, isOpen }) => {
     return (
         <div id="main-menu" className={isOpen ? "menu-active" : "menu-inactive"}>
-            <ul>
-                <li>
-                    <a href="/cv/#/" onClick={toggleMainMenu}>Home</a>
+            <ul className="link-container">
+                <li className="text-container">
+                    <a className="text" href="/cv/#/" onClick={toggleMainMenu}>
+                        <span>Home</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="/cv/#/about" onClick={toggleMainMenu}>About</a>
+                <li className="text-container">
+                    <a className="text" href="/cv/#/about" onClick={toggleMainMenu}>
+                        <span>About</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="/cv/#/experience" onClick={toggleMainMenu}>Experience</a>
+                <li className="text-container">
+                    <a className="text" href="/cv/#/experience" onClick={toggleMainMenu}>
+                        <span>Experience</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="/cv/#/projects" onClick={toggleMainMenu}>Projects</a>
+                <li className="text-container">
+                    <a className="text" href="/cv/#/projects" onClick={toggleMainMenu}>
+                        <span>Projects</span>
+                    </a>
                 </li>
             </ul>
         </div>

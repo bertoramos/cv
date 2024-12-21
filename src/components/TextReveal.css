@@ -1,0 +1,29 @@
+.text-container {
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 0.8s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
