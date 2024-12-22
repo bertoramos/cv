@@ -1,5 +1,5 @@
 #main_header {
-    height: 10%;
+    height: 15%;
 
     @media screen and (max-width: 768px) {
         height: 8%;
@@ -11,10 +11,3 @@
     box-shadow: none;
 }
 
-#main_logo {
-    font-size: 6vh;
-    position: absolute;
-    left: 2%;
-    top: 3%;
-    padding: 1% 1% 1% 1%;
-}

@@ -13,9 +13,7 @@ const Template: React.FC<{ title: string, content: React.ReactNode }> = ({ title
     <IonPage>
 
       <IonHeader id="main_header">
-        <Link to="/">
-          <IonIcon id="main_logo" icon={logoIonic} color="primary"></IonIcon>
-        </Link>
+        
         {
           /*
             <IonToolbar>

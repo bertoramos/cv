@@ -1,9 +1,6 @@
 import React from 'react';
 
 import "./MainMenuContent.css";
-import { TextReveal } from './TextReveal';
-import { a } from 'react-router-dom';
-import { toggle } from 'ionicons/icons';
 
 const MainMenuContent: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }> = ({ toggleMainMenu, isOpen }) => {
     return (
