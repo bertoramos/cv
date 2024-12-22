@@ -41,6 +41,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 
+import './App.css';
+
 
 setupIonicReact();
 

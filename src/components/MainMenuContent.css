@@ -68,19 +68,11 @@
     color: black;
 }
 
-.link-container {
-    display: flex;
-    flex-direction: column;
-    /* Apila los elementos verticalmente */
-    align-items: center;
-    /* Centra los elementos horizontalmente */
-    list-style: none;
-    /* Opcional: eliminar los puntos de lista */
-    padding: 0;
-    margin: 0;
-}
-
 .text-container {
     margin: 10px 0;
     /* Espaciado entre elementos */
+}
+
+.menu-item {
+    font-family: "Santa Clara Black", "Source Code Pro Black", sans-serif;
 }

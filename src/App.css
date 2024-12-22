@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Santa Clara Black';
+    src: url('/cv/assets/fonts/SantaCarla/santacarla_black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro Black';
+    src: url('/cv/assets/fonts/SourceCodePro/SourceCodePro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fascinate Regular';
+    src: url('/cv/assets/fonts/Fascinate/Fascinate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
