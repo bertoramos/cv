@@ -1,7 +1,8 @@
 
-import { IonCol, IonContent, IonGrid, IonRow } from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonIcon, IonRow } from '@ionic/react';
+import { download } from 'ionicons/icons';
+
 import './About.css';
-import { LoremIpsum } from 'react-lorem-ipsum';
 
 const About: React.FC = () => {
     return (
@@ -30,8 +31,12 @@ const About: React.FC = () => {
                         <div id="about-text">
                             <p id="about-title">About</p>
                             <p id="about-content">
-                                <LoremIpsum p={2} />
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor tincidunt habitant; pretium malesuada laoreet enim nam? Consectetur donec fermentum, in taciti per lectus eget lobortis. Vel rhoncus congue nostra, malesuada tempus faucibus enim semper. Vehicula ipsum vel mollis leo malesuada velit tristique pulvinar. Commodo class nulla massa convallis donec a fermentum et feugiat. Taciti molestie facilisi eu vehicula porttitor odio ridiculus. Interdum scelerisque orci ultricies pharetra vestibulum.
+                                Phasellus ante facilisis rhoncus habitasse nisi vestibulum. Posuere dolor ultricies consequat condimentum tellus non erat sagittis posuere. Arcu congue semper egestas metus ut feugiat class lorem. Etiam eu sollicitudin netus scelerisque non nibh fusce. Volutpat vulputate nec dui, nisi egestas enim. Malesuada nulla sociosqu vivamus montes eleifend natoque. Euismod porttitor pulvinar nisi mi, nec venenatis. Faucibus senectus mattis congue habitasse quisque sollicitudin bibendum.
                             </p>
+                            <a id="cv-download" target="_blank" href="https://file-examples.com/storage/fefaeec240676402c9bdb74/2017/10/file-example_PDF_1MB.pdf">
+                                <IonIcon icon={download} /> resume
+                            </a>
                         </div>
                     </IonCol>
                 </IonRow>

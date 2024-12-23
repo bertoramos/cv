@@ -7,7 +7,7 @@ const Home: React.FC = () => {
         <IonContent id="home-content">
             <IonGrid id="home-grid">
                 <IonRow style={{ height: '100%' }}>
-                    
+
                     <IonCol
                         id="home-image-column"
                         size="12"
@@ -27,9 +27,14 @@ const Home: React.FC = () => {
                         pull-md="6"
                     >
                         <div id="home-text">
-                            <p id="home-title">Hey there,<br/> Alberto here</p>
-                            <p id="home-subtitle">I'm computer scientist<br/>from
-                            Canary Island, Spain</p>
+                            <p id="home-title">
+                                Hey there,<br />
+                                Alberto here
+                            </p>
+                            <p id="home-subtitle">
+                                I'm computer scientist from<br />
+                                Canary Island, Spain
+                            </p>
                         </div>
                     </IonCol>
                 </IonRow>
