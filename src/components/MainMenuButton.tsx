@@ -8,7 +8,7 @@ const MainMenuButton: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }> 
 
   return (
     <>
-      <a id="main_logo" href="/">
+      <a id="main_logo" href="/cv/#/">
         <IonIcon icon={logoIonic} color="primary"></IonIcon>
       </a>
       <div onClick={toggleMainMenu} className="button-container">
