@@ -22,8 +22,13 @@ const MainMenuContent: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }>
                     </a>
                 </li>
                 <li className="text-container">
+                    <a className="text" href="/cv/#/education" onClick={toggleMainMenu}>
+                        <span className="menu-num">04</span><span className="menu-item">Education</span>
+                    </a>
+                </li>
+                <li className="text-container">
                     <a className="text" href="/cv/#/projects" onClick={toggleMainMenu}>
-                        <span className="menu-num">04</span><span className="menu-item">Projects</span>
+                        <span className="menu-num">05</span><span className="menu-item">Projects</span>
                     </a>
                 </li>
             </ul>

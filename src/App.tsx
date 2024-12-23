@@ -42,6 +42,7 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 
 import './App.css';
+import Education from './pages/Education';
 
 
 setupIonicReact();
@@ -71,6 +72,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/experience">
           <Template title="Experience" content={<Experience />} />
+        </Route>
+        <Route path="/education">
+          <Template title="Education" content={<Education />} />
         </Route>
         <Route path="/snap-scroll-example">
           <SnapScrollExample />
