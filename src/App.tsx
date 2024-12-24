@@ -43,6 +43,7 @@ import Experience from './pages/Experience';
 
 import './App.css';
 import Education from './pages/Education';
+import ContactButton from './components/ContactButton';
 
 
 setupIonicReact();
@@ -57,6 +58,7 @@ const App: React.FC = () => {
   return (
 
     <IonApp>
+      <ContactButton />
       <MainMenuButton isOpen={isOpen} toggleMainMenu={toggleMainMenu} />
       <MainMenuContent isOpen={isOpen} toggleMainMenu={() => setIsOpen(!isOpen)} />
 
