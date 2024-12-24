@@ -36,7 +36,7 @@ const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
                                 <IonIcon icon={location} /> {props.place}
                             </IonCol>
                             <IonCol size="auto">
-                                <IonIcon icon={globe} /> {props.web}
+                                <IonIcon icon={globe} /> <a href={"http://" + props.web} target="_blank">{props.web}</a>
                             </IonCol>
                         </IonRow>
                     </IonCardHeader>
@@ -80,7 +80,7 @@ const Education: React.FC = () => {
                     from={'From1'}
                     to={'To1'}
                     place={'Place1'}
-                    web={'Web1.com'}
+                    web={'www.web1.com'}
                     logo={'https://picsum.photos/200'}
                     description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore.'}
                     technologies={
@@ -94,7 +94,7 @@ const Education: React.FC = () => {
                     from={'From2'}
                     to={'To2'}
                     place={'Place2'}
-                    web={'Web2.com'}
+                    web={'www.web2.com'}
                     logo={'https://picsum.photos/200'}
                     description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore. Grade: 10'}
                     technologies={
