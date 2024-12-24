@@ -10,3 +10,30 @@
         margin-right: 20%;
     }
 }
+
+.contact-modal {
+    --width: 95%;
+    --height: 95%;
+    --ion-background-color: white;
+}
+
+.contact-modal ion-toolbar {
+    --background: white;
+}
+
+
+.contact-modal ion-header {
+    --background: white;
+    --ion-box-shadow: none;
+    box-shadow: none;
+    --ion-toolbar-shadow: none;
+}
+
+.contact-modal ion-button {
+    color: black;
+}
+
+.contact-modal-content * {
+    color: black;
+    font-family: "Source Code Pro Light";
+}

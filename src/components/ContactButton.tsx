@@ -18,8 +18,8 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
             <IonButton className="contact-button" id="open-modal" expand="block">
                 Contact
             </IonButton>
-            <IonModal ref={modal} trigger="open-modal">
-                <IonHeader>
+            <IonModal className="contact-modal" ref={modal} trigger="open-modal">
+                <IonHeader style={{"--background": "#54d61c", "--ion-background-color": "red"}}>
                     <IonToolbar>
                         <IonTitle>Contact</IonTitle>
                         <IonButtons slot="end">
@@ -27,7 +27,7 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                         </IonButtons>
                     </IonToolbar>
                 </IonHeader>
-                <IonContent className="ion-padding">
+                <IonContent className="contact-modal-content ion-padding">
                     <p>
                         Contact
                     </p>
