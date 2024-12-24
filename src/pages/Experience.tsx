@@ -1,23 +1,35 @@
 
-import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonCol, IonContent, IonGrid, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
+import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
 import './Experience.css';
 import { globe, location, logoAndroid } from 'ionicons/icons';
+
+
 
 interface ExperienceComponentProps {
     title: string;
     company: string;
-    time: string;
+    from: string;
+    to: string;
+    place: string;
+    web: string;
+    logo: string;
     description: string;
-    technologies: string[];
-    image: string;
+    technologies: {
+        name: string;
+        logo: any;
+    }[],
+    references: {
+        name: string;
+        url: string;
+    }[]
 }
 
-const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ title, company, time, description, technologies, image }) => {
+const ExperienceComponent: React.FC<ExperienceComponentProps> = ( props ) => {
     return (
         <IonAccordion>
             <IonItem slot="header" color="light">
-                <IonLabel className='ion-text-start'>Title @ Company</IonLabel>
-                <IonLabel className='ion-text-end'>From - To</IonLabel>
+                <IonLabel className='ion-text-start'>{props.title} @ {props.company}</IonLabel>
+                <IonLabel className='ion-text-end'>{props.from} - {props.to}</IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
                 <IonCard>
@@ -25,10 +37,10 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ title, compan
                     <IonCardHeader>
                         <IonRow>
                             <IonCol size="auto">
-                                <IonIcon icon={location} /> Place
+                                <IonIcon icon={location} /> {props.place}
                             </IonCol>
                             <IonCol size="auto">
-                                <IonIcon icon={globe} /> Web
+                                <IonIcon icon={globe} /> <a href={"http://" + props.web} target="_blank">{props.web}</a>
                             </IonCol>
                         </IonRow>
                     </IonCardHeader>
@@ -36,27 +48,34 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ title, compan
                     <IonCardContent>
                         <IonRow>
                             <IonCol offset="0" size="12" size-md="2" push-md="9.5" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img style={{ margin: "auto" }} src="https://picsum.photos/100" alt="" />
+                                <img style={{ margin: "auto" }} src={props.logo} alt="" />
                             </IonCol>
                             <IonCol offset="0.5" size="12" size-md="9" pull-md="2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore.
+                                {props.description}
                             </IonCol>
                         </IonRow>
                         <IonRow>
                             {
-                                technologies.map((tech, index) => (
+                                props.technologies.map((tech, index) => (
                                     <IonCol key={index} size="auto">
                                         <IonChip>
-                                            <IonIcon icon={logoAndroid} color="primary"></IonIcon>
-                                            <IonLabel>{tech}</IonLabel>
+                                            <IonIcon icon={tech.logo} color="primary"></IonIcon>
+                                            <IonLabel>{tech.name}</IonLabel>
                                         </IonChip>
                                     </IonCol>
                                 ))
                             }
                         </IonRow>
                         <IonRow>
-                            <IonButton fill='clear'>Referencia 1</IonButton>
+                            {
+                                props.references.map((ref, index) => (
+                                    <IonCol key={index} size="auto">
+                                        <IonButton fill="clear" href={ref.url} target="_blank">{ref.name}</IonButton>
+                                    </IonCol>
+                                ))
+                            }
                         </IonRow>
+                        
                     </IonCardContent>
                 </IonCard>
             </div>
@@ -70,20 +89,44 @@ const Experience: React.FC = () => {
             <IonTitle className="ion-text-center ion-padding" style={{fontSize: "4vh"}}>Experience</IonTitle>
             <IonAccordionGroup expand="inset">
                 <ExperienceComponent
-                    title={'Experience 1'}
-                    company={'Company 1'}
-                    time={"JAN 24 - PRESENT"}
-                    description={'my experience in company 1'}
-                    technologies={["tech1", "tech2"]}
-                    image={'https://picsum.photos/800'}
+                    title={'Title1'}
+                    company={'Company1'}
+                    from={'From1'}
+                    to={'To1'}
+                    place={'Place1'}
+                    web={'www.web1.com'}
+                    logo={'https://picsum.photos/200'}
+                    description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore.'}
+                    technologies={
+                        [{name: "tech11", logo: logoAndroid},
+                        {name: "tech12", logo: logoAndroid}]
+                    }  
+                    references={
+                        [
+                            {name: "Reference11", url: "http://google.com"},
+                            {name: "Reference12", url: "http://google.com"}
+                        ]
+                    }                  
                 />
                 <ExperienceComponent
-                    title={'Experience 1'}
-                    company={'Company 1'}
-                    time={"JAN 24 - PRESENT"}
-                    description={'my experience in company 1'}
-                    technologies={["tech1", "tech2"]}
-                    image={'https://picsum.photos/800'}
+                    title={'Title2'}
+                    company={'Company2'}
+                    from={'From2'}
+                    to={'To2'}
+                    place={'Place2'}
+                    web={'www.web2.com'}
+                    logo={'https://picsum.photos/200'}
+                    description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore. Grade: 10'}
+                    technologies={
+                        [{name: "tech21", logo: logoAndroid},
+                        {name: "tech22", logo: logoAndroid}]
+                    }
+                    references={
+                        [
+                            {name: "Reference21", url: "http://google.com"},
+                            {name: "Reference22", url: "http://google.com"}
+                        ]
+                    }    
                 />
             </IonAccordionGroup>
         </IonContent>
