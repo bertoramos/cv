@@ -10,19 +10,19 @@ const Projects: React.FC = () => {
                 <div className="snap-container">
                     
                     <div className="snap-section">
-                        <ProjectComponent title={'Project1'} content={'project1'} image={'https://picsum.photos/800'} />
+                        <ProjectComponent title={'Project1'} description={'project1'} image={'https://picsum.photos/800'} />
                     </div>
 
                     <div className="snap-section">
-                        <ProjectComponent title={'Project2'} content={'project2'} image={'https://picsum.photos/800'} />
+                        <ProjectComponent title={'Project2'} description={'project2'} image={'https://picsum.photos/800'} />
                     </div>
 
                     <div className="snap-section">
-                        <ProjectComponent title={'Project3'} content={'project3'} image={'https://picsum.photos/800'} />
+                        <ProjectComponent title={'Project3'} description={'project3'} image={'https://picsum.photos/800'} />
                     </div>
 
                     <div className="snap-section">
-                        <ProjectComponent title={'Project4'} content={'project4'} image={'https://picsum.photos/800'} />
+                        <ProjectComponent title={'Project4'} description={'project4'} image={'https://picsum.photos/800'} />
                     </div>
                     
                 </div>

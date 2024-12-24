@@ -1,0 +1,72 @@
+.project-component-grid {
+    margin-top: 30vh;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+.project-component-center-column {
+    @media screen and (max-width: 768px) {
+
+
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        /* Opcional: organiza el contenido verticalmente */
+        align-items: center;
+        /* Centra horizontalmente los elementos */
+        text-align: center;
+        /* Centra el texto dentro de los elementos */
+        height: 100%;
+        /* Asegura que el contenedor use todo el espacio disponible si es necesario */
+    }
+}
+
+.project-component-image-column {
+    margin-left: -10%;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        height: 50%;
+    }
+}
+
+.project-component-image-column img {
+    border-radius: 50px;
+
+    @media screen and (max-width: 768px) {
+        height: 50%;
+        width: 50%;
+        border-radius: 25px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.project-component-title {
+    font-size: 5vh;
+
+    text-align: left;
+    margin-left: 10%;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        padding: 3;
+    }
+}
+
+.project-component-description {
+    font-family: 'Source Code Pro Light', sans-serif;
+    font-size: 3vh;
+
+    text-align: left;
+    margin-left: 10%;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        padding: 3vh;
+    }
+}

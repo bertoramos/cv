@@ -1,16 +1,26 @@
+
 import { IonCol, IonGrid, IonRow } from "@ionic/react";
 
-const ProjectComponent: React.FC<{ title: string, content: string, image: string }> = ({ title, content, image }) => {
+import "./ProjectComponent.css";
+
+const ProjectComponent: React.FC<{ title: string, description: string, image: string }> = ({ title, description, image }) => {
 
     return (
-        <IonGrid style={{marginTop: "30vh"}}>
+        <IonGrid className="project-component-grid">
             <IonRow>
-                <IonCol style={{marginLeft: "-10%"}}>
-                    <img style={{borderRadius: "50px"}} src={image} alt={title} />
+                <IonCol 
+                    className="project-component-image-column project-component-center-column"
+                    size="12"
+                    size-md="6"
+                    >
+                    <img src={image} alt={title} />
                 </IonCol>
-                <IonCol>
-                    <h1>{title}</h1>
-                    <p>{content}</p>
+                <IonCol
+                    size="12"
+                    size-md="6"
+                    className="project-component-text-column project-component-center-column">
+                    <p className="project-component-title">{title}</p>
+                    <p className="project-component-description">{description}</p>
                 </IonCol>
             </IonRow>
         </IonGrid>
