@@ -1,10 +1,18 @@
 import React, { useRef } from "react";
-import { IonButton, IonButtons, IonChip, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonLabel, IonModal, IonRow, IonTitle, IonToolbar } from "@ionic/react";
+import { IonButton, IonButtons, IonChip, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonLabel, IonModal, IonRow, IonText, IonTitle, IonToolbar } from "@ionic/react";
 import "./ProjectComponent.css";
 import { mailOutline, logoGithub, logoLinkedin } from "ionicons/icons";
 
 interface ProjectDetailProps {
-    trigger: string;
+    modal_trigger: string;
+    title: string;
+    image: string;
+    description: string;
+    url: string;
+    technologies: {
+        name: string;
+        logo: any;
+    }[];
 };
 
 const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
@@ -15,7 +23,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
     };
 
     return (
-        <IonModal className="project-detail-modal" ref={modal} trigger={props.trigger}>
+        <IonModal className="project-detail-modal" ref={modal} trigger={props.modal_trigger}>
             <IonHeader style={{ "--background": "#54d61c", "--ion-background-color": "red" }}>
                 <IonToolbar>
                     <IonTitle></IonTitle>
@@ -25,7 +33,38 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
                 </IonToolbar>
             </IonHeader>
             <IonContent className="project-detail-modal-content ion-padding">
-                Project details
+                <IonGrid>
+                    <IonRow>
+                        <IonCol size="12" size-md="6">
+                            <IonTitle className="ion-text-center ion-padding-bottom">
+                                {props.title}
+                            </IonTitle>
+                            <IonText className="ion-text-justify ion-padding-bottom">
+                                {props.description}
+                            </IonText>
+                            <div className="ion-padding">
+                                <a 
+                                    href={props.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer">Click here for more info.
+                                </a>
+                            </div>
+                            <div>
+                                {
+                                    props.technologies.map((tech, index) => (
+                                        <IonChip color="primary" key={index}>
+                                            <IonIcon color="light" icon={tech.logo}></IonIcon>
+                                            <IonLabel color="light">{tech.name}</IonLabel>
+                                        </IonChip>
+                                    ))
+                                }
+                            </div>
+                        </IonCol>
+                        <IonCol size="12" size-md="6" className="ion-text-center">
+                            <img style={{height: "50%"}} src={props.image} alt={props.title} />
+                        </IonCol>
+                    </IonRow>
+                </IonGrid>
             </IonContent>
         </IonModal>
     );
@@ -34,6 +73,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
 interface ProjectComponentProps {
     image: string;
     title: string;
+    short_description: string;
+    url: string;
     description: string;
     technologies: {
         name: string;
@@ -59,15 +100,20 @@ const ProjectComponent: React.FC<ProjectComponentProps> = (props) => {
                     className="project-component-text-column project-component-center-column">
                     <p className="project-component-title">{props.title}</p>
                     <div className="project-component-description">
-                        <div className="ion-padding-bottom project-component-description-text">{props.description}</div>
+                        <div className="ion-padding-bottom project-component-description-text">{props.short_description}</div>
                         <IonButton
                             id={props.title + "-open-project-detail-modal"}
                             fill="clear"
                             className="project-component-detail-button">
                             Details
                         </IonButton>
-                        <ProjectDetail 
-                            trigger={props.title + "-open-project-detail-modal"}
+                        <ProjectDetail
+                            modal_trigger={props.title + "-open-project-detail-modal"}
+                            title={props.title}
+                            image={props.image}
+                            description={props.description}
+                            url={props.url}
+                            technologies={props.technologies}
                         />
                         <div>
                             {
