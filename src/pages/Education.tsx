@@ -43,24 +43,22 @@ const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
 
                     <IonCardContent>
                         <IonRow>
-                            <IonCol offset="0" size="12" size-md="2" push-md="9.5" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img style={{ margin: "auto" }} src={props.logo} alt="" />
+                            <IonCol offset="0" size="12" size-md="2" push-md="9.5" className="ion-text-center">
+                                <img style={{ margin: "auto" }} src={props.logo} alt={props.logo} />
                             </IonCol>
-                            <IonCol offset="0.5" size="12" size-md="9" pull-md="2">
-                                {props.description}
-                            </IonCol>
-                        </IonRow>
-                        <IonRow>
-                            {
+                            <IonCol size="12" size-md="9" pull-md="2">
+                                <div>{props.description}</div>
+                                <div className='ion-padding-top'>{
                                 props.technologies.map((tech, index) => (
-                                    <IonCol key={index} size="auto">
+                                    <IonCol key={index} size="auto" >
                                         <IonChip>
                                             <IonIcon icon={tech.logo} color="primary"></IonIcon>
                                             <IonLabel>{tech.name}</IonLabel>
                                         </IonChip>
                                     </IonCol>
                                 ))
-                            }
+                            }</div>
+                            </IonCol>
                         </IonRow>
                     </IonCardContent>
                 </IonCard>
