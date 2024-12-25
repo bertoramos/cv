@@ -1,8 +1,8 @@
-import { IonButton, IonModal, IonHeader, IonToolbar, IonTitle, IonButtons, IonContent, IonGrid, IonRow, IonCol, IonIcon, IonChip } from "@ionic/react";
+import { IonButton, IonModal, IonHeader, IonToolbar, IonTitle, IonButtons, IonContent, IonGrid, IonRow, IonCol, IonIcon } from "@ionic/react";
 import { useRef } from "react";
 
 import "./ContactButton.css";
-import { logoGithub, logoLinkedin, mail, mailOutline } from "ionicons/icons";
+import { chatbubblesOutline, logoGithub, logoLinkedin, mailOutline } from "ionicons/icons";
 
 interface ContactButtonProps {
 
@@ -16,7 +16,8 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
 
     return (
         <>
-            <IonButton className="contact-button" id="open-modal" expand="block">
+            <IonButton className="contact-button" shape="round" id="open-modal" expand="block">
+                <IonIcon slot="start" icon={chatbubblesOutline}></IonIcon>
                 Contact
             </IonButton>
             <IonModal className="contact-modal" ref={modal} trigger="open-modal">
@@ -34,7 +35,7 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                             <IonCol size="12" size-md="6" offset="0" offset-md="0.5">
                                 <p>Get in touch!</p>
                                 <p>
-                                    Hey! ☺️ Feel free to send me an email at <a href="mailto:albertoramossanchez@outlook.es">albertoramossanchez@outlook.es</a> or contact me on social media.
+                                    Hey! 🤗 Feel free to send me an email at <a href="mailto:albertoramossanchez@outlook.es">albertoramossanchez@outlook.es</a> or contact me on social media.
                                 </p>
                                 <div>
                                     <IonButton
