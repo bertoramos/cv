@@ -23,12 +23,12 @@ interface EducationComponentProps {
 const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
     return (
         <IonAccordion>
-            <IonItem slot="header" color="light">
+            <IonItem slot="header" color="dark">
                 <IonLabel className='ion-text-start'>{props.title} @ {props.corporation}</IonLabel>
                 <IonLabel className='ion-text-end'>{props.from} - {props.to}</IonLabel>
             </IonItem>
-            <div className="ion-padding" slot="content">
-                <IonCard>
+            <div className="ion-padding" slot="content" style={{backgroundColor: "white"}}>
+                <IonCard color="dark">
 
                     <IonCardHeader>
                         <IonRow>
@@ -51,7 +51,7 @@ const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
                                 <div className='ion-padding-top'>{
                                 props.technologies.map((tech, index) => (
                                     <IonCol key={index} size="auto" >
-                                        <IonChip>
+                                        <IonChip color="light">
                                             <IonIcon icon={tech.logo} color="primary"></IonIcon>
                                             <IonLabel>{tech.name}</IonLabel>
                                         </IonChip>
@@ -69,7 +69,7 @@ const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
 
 const Education: React.FC = () => {
     return (
-        <IonContent>
+        <IonContent color="dark">
             <IonTitle className="ion-text-center ion-padding" style={{fontSize: "4vh"}}>Education</IonTitle>
             <IonAccordionGroup expand="inset">
                 <EducationComponent

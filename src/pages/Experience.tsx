@@ -27,12 +27,12 @@ interface ExperienceComponentProps {
 const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
     return (
         <IonAccordion>
-            <IonItem slot="header" color="light">
+            <IonItem slot="header" color="dark">
                 <IonLabel className='ion-text-start'>{props.title} @ {props.company}</IonLabel>
                 <IonLabel className='ion-text-end'>{props.from} - {props.to}</IonLabel>
             </IonItem>
-            <div className="ion-padding" slot="content">
-                <IonCard>
+            <div className="ion-padding" style={{ backgroundColor: "white" }} slot="content">
+                <IonCard color="dark">
 
                     <IonCardHeader>
                         <IonRow>
@@ -57,8 +57,8 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
                                         props.technologies.map((tech, index) => (
                                             <IonCol key={index} size="auto">
                                                 <IonChip>
-                                                    <IonIcon icon={tech.logo} color="primary"></IonIcon>
-                                                    <IonLabel>{tech.name}</IonLabel>
+                                                    <IonIcon icon={tech.logo} color="light"></IonIcon>
+                                                    <IonLabel color="light">{tech.name}</IonLabel>
                                                 </IonChip>
                                             </IonCol>
                                         ))
@@ -85,7 +85,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
 
 const Experience: React.FC = () => {
     return (
-        <IonContent>
+        <IonContent color="dark">
             <IonTitle className="ion-text-center ion-padding" style={{ fontSize: "4vh" }}>Experience</IonTitle>
             <IonAccordionGroup expand="inset">
                 <ExperienceComponent
