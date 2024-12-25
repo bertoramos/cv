@@ -70,3 +70,41 @@
         padding: 3vh;
     }
 }
+
+.project-detail-modal {
+    --width: 80%;
+    --height: 80%;
+    --ion-background-color: white;
+
+    @media screen and (max-width: 768px) {
+        --width: 100%;
+        --height: 100%;
+
+        text-align: center;
+    }
+}
+
+.project-detail-modal ion-toolbar {
+    --background: white;
+}
+
+.project-detail-modal ion-header {
+    --background: white;
+    --ion-box-shadow: none;
+    box-shadow: none;
+    --ion-toolbar-shadow: none;
+}
+
+.project-detail-modal ion-button {
+    color: black;
+}
+
+.project-detail-modal-content * {
+    color: black;
+    font-family: "Source Code Pro Light";
+}
+
+.project-component-description-text {
+    color: black;
+    font-family: "Source Code Pro Light";
+}

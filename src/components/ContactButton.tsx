@@ -16,11 +16,11 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
 
     return (
         <>
-            <IonButton className="contact-button" shape="round" id="open-modal" expand="block">
+            <IonButton className="contact-button" shape="round" id="open-contact-modal" expand="block">
                 <IonIcon slot="start" icon={chatbubblesOutline}></IonIcon>
                 Contact
             </IonButton>
-            <IonModal className="contact-modal" ref={modal} trigger="open-modal">
+            <IonModal className="contact-modal" ref={modal} trigger="open-contact-modal">
                 <IonHeader style={{ "--background": "#54d61c", "--ion-background-color": "red" }}>
                     <IonToolbar>
                         <IonTitle>Contact</IonTitle>
