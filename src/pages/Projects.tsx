@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
     var lorem_text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore.';
     var short_lorem_text = 'Lorem ipsum dolor sit amet consectetur';
     return (
-        <IonContent color="dark">
+        <IonContent >
             <div className="project-snap-container">
                 
                 <div className="project-snap-section">

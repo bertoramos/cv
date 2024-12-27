@@ -1,5 +1,8 @@
+
 /* Contenedor principal que maneja el scroll y el snap */
 .project-snap-container {
+    background-color: var(--app_light_background);
+    
     display: flex;
     flex-direction: column;
     overflow-y: scroll; /* Habilita desplazamiento vertical */

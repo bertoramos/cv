@@ -30,6 +30,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/types.css';
 import Template from './components/Template';
 import SnapScrollExample from './pages/SnapScrollExample';
 import MainMenuButton from './components/MainMenuButton';

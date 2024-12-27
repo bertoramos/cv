@@ -1,5 +1,7 @@
 .project-component-grid {
     margin-top: 30vh;
+    
+    background-color: var(--app_light_background);
 
     @media screen and (max-width: 768px) {
         margin: 0;
@@ -51,7 +53,8 @@
 
     text-align: left;
     margin-left: 10%;
-
+    color: var(--app_main_text);
+    
     @media screen and (max-width: 768px) {
         margin: 0;
         padding: 3;
@@ -71,10 +74,18 @@
     }
 }
 
+.project-component-description ion-button {
+    color: var(--app_clear_highlighted_text);
+}
+
+.project-technologies-container ion-chip * {
+    color: var(--app_main_text);
+}
+
 .project-detail-modal {
     --width: 80%;
     --height: 80%;
-    --ion-background-color: white;
+    --ion-background-color: var(--app_light_background);
 
     @media screen and (max-width: 768px) {
         --width: 100%;
@@ -85,26 +96,28 @@
 }
 
 .project-detail-modal ion-toolbar {
-    --background: white;
+    --background: var(--app_light_background);
 }
 
 .project-detail-modal ion-header {
-    --background: white;
+    --ion-color: var(--app_main_text);
+    --background: var(--app_light_background);
     --ion-box-shadow: none;
     box-shadow: none;
     --ion-toolbar-shadow: none;
 }
 
 .project-detail-modal ion-button {
-    color: black;
+    color: var(--app_clear_highlighted_text);
 }
 
 .project-detail-modal-content * {
-    color: black;
+    color: var(--app_main_text);
+    --ion-color: var(--app_main_text);
     font-family: "Source Code Pro Light";
 }
 
 .project-component-description-text {
-    color: black;
+    color: var(--app_main_text);
     font-family: "Source Code Pro Light";
 }

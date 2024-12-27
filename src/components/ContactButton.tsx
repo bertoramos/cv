@@ -23,7 +23,6 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
             <IonModal className="contact-modal" ref={modal} trigger="open-contact-modal">
                 <IonHeader style={{ "--background": "#54d61c", "--ion-background-color": "red" }}>
                     <IonToolbar>
-                        <IonTitle>Contact</IonTitle>
                         <IonButtons slot="end">
                             <IonButton className="ion-margin ion-padding" onClick={() => dismiss()}>Close</IonButton>
                         </IonButtons>

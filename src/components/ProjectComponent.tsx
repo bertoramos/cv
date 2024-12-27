@@ -49,12 +49,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
                                     rel="noopener noreferrer">Click here for more info.
                                 </a>
                             </div>
-                            <div>
+                            <div className="project-technologies-container">
                                 {
                                     props.technologies.map((tech, index) => (
-                                        <IonChip color="primary" key={index}>
-                                            <IonIcon color="light" icon={tech.logo}></IonIcon>
-                                            <IonLabel color="light">{tech.name}</IonLabel>
+                                        <IonChip key={index}>
+                                            <IonIcon icon={tech.logo}></IonIcon>
+                                            <IonLabel>{tech.name}</IonLabel>
                                         </IonChip>
                                     ))
                                 }
@@ -115,12 +115,12 @@ const ProjectComponent: React.FC<ProjectComponentProps> = (props) => {
                             url={props.url}
                             technologies={props.technologies}
                         />
-                        <div>
+                        <div className="project-technologies-container">
                             {
                                 props.technologies.map((tech, index) => (
-                                    <IonChip color="primary" key={index}>
-                                        <IonIcon color="light" icon={tech.logo}></IonIcon>
-                                        <IonLabel color="light">{tech.name}</IonLabel>
+                                    <IonChip key={index}>
+                                        <IonIcon icon={tech.logo}></IonIcon>
+                                        <IonLabel>{tech.name}</IonLabel>
                                     </IonChip>
                                 ))
                             }

@@ -27,12 +27,12 @@ interface ExperienceComponentProps {
 const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
     return (
         <IonAccordion>
-            <IonItem slot="header" color="dark">
+            <IonItem  className="experience-slot" slot="header">
                 <IonLabel className='ion-text-start'>{props.title} @ {props.company}</IonLabel>
                 <IonLabel className='ion-text-end'>{props.from} - {props.to}</IonLabel>
             </IonItem>
-            <div className="ion-padding" style={{ backgroundColor: "white" }} slot="content">
-                <IonCard color="dark">
+            <div className="experience-card-div ion-padding" slot="content">
+                <IonCard className="experience-card">
 
                     <IonCardHeader>
                         <IonRow>
@@ -85,7 +85,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
 
 const Experience: React.FC = () => {
     return (
-        <IonContent color="dark">
+        <IonContent id="experience-content">
             <IonTitle className="ion-text-center ion-padding" style={{ fontSize: "4vh" }}>Experience</IonTitle>
             <IonAccordionGroup expand="inset">
                 <ExperienceComponent
