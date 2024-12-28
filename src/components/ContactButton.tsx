@@ -46,14 +46,6 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                                         <IonIcon className="ion-padding" size="large" slot="icon-only" icon={mailOutline} />
                                     </IonButton>
                                     <IonButton
-                                        href="https://github.com/bertoramos"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        shape="round"
-                                        fill="clear">
-                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoGithub} />
-                                    </IonButton>
-                                    <IonButton
                                         href="https://www.linkedin.com/in/alberto-rs/"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -61,6 +53,15 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                                         fill="clear">
                                         <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoLinkedin} />
                                     </IonButton>
+                                    <IonButton
+                                        href="https://github.com/bertoramos"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        shape="round"
+                                        fill="clear">
+                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoGithub} />
+                                    </IonButton>
+                                    
                                 </div>
                             </IonCol>
                             <IonCol size="12" size-md="5.5" className="ion-text-center">
