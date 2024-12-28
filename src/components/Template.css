@@ -5,7 +5,7 @@
         height: 12%;
     }
 
-    background-color: var(--app_light_background);
+    background-color: var(--app_light_background_color);
 
     --ion-box-shadow: none;
     box-shadow: none;

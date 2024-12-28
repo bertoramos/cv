@@ -1,6 +1,6 @@
 .contact-button {
-    color: var(--app_relevant_button_text);
-    --background: var(--app_relevant_button_bg);
+    color: var(--app_relevant_button_text_color);
+    --background: var(--app_relevant_button_bg_color);
 
     position: absolute;
     padding: 1%;
@@ -17,7 +17,7 @@
 .contact-modal {
     --width: 80%;
     --height: 80%;
-    --ion-background-color: var(--app_light_background);
+    --ion-background-color: var(--app_light_background_color);
 
     @media screen and (max-width: 768px) {
         --width: 100%;
@@ -28,21 +28,21 @@
 }
 
 .contact-modal ion-toolbar {
-    --background: var(--app_light_background);
+    --background: var(--app_light_background_color);
 }
 
 .contact-modal ion-header {
-    --background: var(--app_light_background);
+    --background: var(--app_light_background_color);
     --ion-box-shadow: none;
     box-shadow: none;
     --ion-toolbar-shadow: none;
 }
 
 .contact-modal ion-button {
-    color: var(--app_clear_highlighted_text);
+    color: var(--app_clear_highlighted_text_color);
 }
 
 .contact-modal-content * {
-    color: var(--app_main_text);
+    color: var(--app_main_text_color);
     font-family: "Source Code Pro Light";
 }

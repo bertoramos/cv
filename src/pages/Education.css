@@ -1,40 +1,40 @@
 
 #education-content {
-    --ion-background-color: var(--app_light_background);
+    --ion-background-color: var(--app_light_background_color);
 }
 
 #education-content ion-title {
-    color: var(--app_main_text);
+    color: var(--app_main_text_color);
     font-family: "Source Code Pro Black", sans-serif;
     font-size: 4vh;
 }
 
 .education-slot {
-    --ion-item-background: var(--app_dark_background);
-    --ion-item-color: var(--app_main_text);
+    --ion-item-background: var(--app_medium_background_color);
+    --ion-item-color: var(--app_main_text_color);
 
     --ion-font-family: "Source Code Pro Black", sans-serif;
 }
 
 .education-card-div {
-    background-color: var(--app_dark_background);
+    background-color: var(--app_medium_background_color);
 }
 
 .education-card {
-    --ion-card-background: var(--app_dark_background);
+    --ion-card-background: var(--app_medium_background_color);
 }
 
 .education-card * {
-    color: var(--app_main_text);
+    color: var(--app_main_text_color);
     font-family: "Source Code Pro Light", sans-serif;
 }
 
 .education-card a {
-    color: var(--app_clear_highlighted_text);
+    color: var(--app_clear_highlighted_text_color);
     font-family: "Source Code Pro Black", sans-serif;
 }
 
 .education-card ion-chip * {
-    color: var(--app_main_text);
+    color: var(--app_main_text_color);
     font-family: "Source Code Pro Light", sans-serif;
 }

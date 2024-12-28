@@ -1,16 +1,17 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
 :root {
-    --app_light_background: #845ec2;
-    --app_dark_background: #d65db1;
-    --app_main_text: #ff9671;
-    --app_clear_highlighted_text: #f9f871;
-    --app_dark_highlighted_text: #2665b8;
-    --app_relevant_button_bg: #8dbfff;
-    --app_relevant_button_text: #008f7a;
-    --app_button_bg: #00f0cc;
-    --app_button_text: #aaa;
-    --app_decoration_color: #000;
+    --app_light_background_color: #eaf4f4;
+    --app_medium_background_color: #cae0e0;
+    --app_dark_background_color: #014f86;
+    --app_main_text_color: #333;
+    --app_clear_highlighted_text_color: #3fa7d6;
+    --app_dark_highlighted_text_color: #ff6f59;
+    --app_relevant_button_bg_color: #ff6f59;
+    --app_relevant_button_text_color: #eaf4f4;
+    --app_button_bg_color: #3fa7d6;
+    --app_button_text_color: #8390a5;
+    --app_decoration_color: #f4d35e;
 }
 
 /* USAGE DEMO

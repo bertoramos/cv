@@ -1,7 +1,7 @@
 
 /* Contenedor principal que maneja el scroll y el snap */
 .project-snap-container {
-    background-color: var(--app_light_background);
+    background-color: var(--app_light_background_color);
     
     display: flex;
     flex-direction: column;
