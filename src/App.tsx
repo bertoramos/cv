@@ -1,3 +1,6 @@
+
+import { CV_URL } from './utils/constants';
+
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { IonApp, IonContent, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 

@@ -2,7 +2,8 @@ import { IonButton, IonModal, IonHeader, IonToolbar, IonTitle, IonButtons, IonCo
 import { useRef } from "react";
 
 import "./ContactButton.css";
-import { chatbubblesOutline, logoGithub, logoLinkedin, mailOutline } from "ionicons/icons";
+import { chatbubblesOutline, download, logoGithub, logoLinkedin, mailOutline } from "ionicons/icons";
+import { CV_URL } from "../utils/constants";
 
 interface ContactButtonProps {
 
@@ -61,7 +62,14 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                                         fill="clear">
                                         <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoGithub} />
                                     </IonButton>
-                                    
+                                    <IonButton
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        shape="round"
+                                        fill="clear"
+                                        href={CV_URL}>
+                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={download} /> <span style={{"textAlign": "center", "fontFamily": "Source Code Pro Black"}}>resume</span>
+                                    </IonButton>
                                 </div>
                             </IonCol>
                             <IonCol size="12" size-md="5.5" className="ion-text-center">

@@ -1,4 +1,5 @@
 
+import { CV_URL } from '../utils/constants';
 import { IonCol, IonContent, IonGrid, IonIcon, IonRow } from '@ionic/react';
 import { download } from 'ionicons/icons';
 
@@ -38,7 +39,7 @@ const About: React.FC = () => {
                                 <p>Feel free to say hello. I'll be excited to hear from you.</p>
                                 <p>Take care and stay awesome!</p>
                             </p>
-                            <a id="cv-download" target="_blank" href="https://file-examples.com/storage/fefaeec240676402c9bdb74/2017/10/file-example_PDF_1MB.pdf">
+                            <a id="cv-download" target="_blank" href={CV_URL}>
                                 <IonIcon icon={download} /> resume
                             </a>
                         </div>
