@@ -12,7 +12,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        height: 40%;
+        height: 100%;
     }
     
 }
@@ -52,7 +52,7 @@
 }
 
 #about-text {
-    margin: 10% 0% 0% 10%;
+    margin: 5% 0% 0% 5%;
     padding: 0;
     position: relative;
     text-align: left;
@@ -61,6 +61,8 @@
     
     height: 100%;
     width: 100%;
+
+    overflow-y: auto;
 
     @media screen and (max-width: 768px) {
         text-align: center;
@@ -74,7 +76,7 @@
 
 #about-title {
     font-family: 'Source Code Pro Black', sans-serif;
-    font-size: 9vh;
+    font-size: 5vh;
     color: var(--app_main_text_color);
     padding-bottom: 0;
     margin-bottom: 5vh;

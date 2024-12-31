@@ -16,7 +16,7 @@ const Home: React.FC = () => {
                     >
                         <img
                             id="home-image"
-                            src="https://www.miicharacters.com/miis/thumb/485_batman.jpg"
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/699db055-4f06-4691-a565-25e82ea7b0b6/dgloiyq-3c381d84-e934-4153-b202-eebaba21faf0.png/v1/fill/w_800,h_800,q_80,strp/my_nintendo_mii_character_by_rorothesupergamerboy_dgloiyq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNjk5ZGIwNTUtNGYwNi00NjkxLWE1NjUtMjVlODJlYTdiMGI2XC9kZ2xvaXlxLTNjMzgxZDg0LWU5MzQtNDE1My1iMjAyLWVlYmFiYTIxZmFmMC5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.7L-3jGpwIu6jaeEr2wod9_cSdHvi-59PJiVVGvV-6dU"
                             alt="Example"
                         />
                     </IonCol>
