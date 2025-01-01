@@ -1,7 +1,8 @@
 
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
 import './Education.css';
-import { globe, location, logoAndroid } from 'ionicons/icons';
+import { globe, location, logoAndroid, logoRss } from 'ionicons/icons';
+import { logoCpp, logoPython } from '../private/assets/logos';
 
 
 
@@ -73,31 +74,53 @@ const Education: React.FC = () => {
             <IonTitle className="ion-text-center ion-padding">Education</IonTitle>
             <IonAccordionGroup expand="inset">
                 <EducationComponent
-                    title={'Title1'}
-                    corporation={'Corporation1'}
-                    from={'From1'}
-                    to={'To1'}
-                    place={'Place1'}
-                    web={'www.web1.com'}
+                    title={'PhD in Business, Internet and Communications Technologies'}
+                    corporation={'ULPGC'}
+                    from={'Oct 2022'}
+                    to={'Present'}
+                    place={'Las Palmas de Gran Canaria'}
+                    web={'https://www2.ulpgc.es/plan-estudio/6024'}
                     logo={'https://picsum.photos/200'}
-                    description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore.'}
+                    description={'A multidisciplinary programme focusing on the development and management of information, communication and knowledge technologies and their socio-economic impact.'}
                     technologies={
-                        [{name: "tech11", logo: logoAndroid},
-                        {name: "tech12", logo: logoAndroid}]
+                        []
                     }                    
                 />
                 <EducationComponent
-                    title={'Title2'}
-                    corporation={'Corporation2'}
-                    from={'From2'}
-                    to={'To2'}
-                    place={'Place2'}
-                    web={'www.web2.com'}
+                    title={'Master\'s Degree in Intelligent Systems and Numerical Applications in Engineering'}
+                    corporation={'ULPGC'}
+                    from={'Oct 2020'}
+                    to={'Sep 2022'}
+                    place={'Las Palmas de Gran Canaria'}
+                    web={'www.siani.es'}
                     logo={'https://picsum.photos/200'}
-                    description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laborum ipsa eveniet mollitia, ex blanditiis eius totam dignissimos aspernatur suscipit, distinctio atque? Nulla ex deleniti voluptates, quas laudantium iure tempore. Grade: 10'}
+                    description={'The programme has been designed to equip students with the necessary skills and tools to initiate R&D&I activities in areas such as artificial intelligence and numerical applications in engineering. The programme is taught by the University Institute of Intelligent Systems and Numerical Applications in Engineering (SIANI), a research and teaching centre for postgraduate studies attached to the ULPGC. Grade: 9.505'}
                     technologies={
-                        [{name: "tech21", logo: logoAndroid},
-                        {name: "tech22", logo: logoAndroid}]
+                        [
+                            {name: "Python", logo: logoPython},
+                            {name: "C++", logo: logoCpp},
+                            {name: "Pytorch", logo: logoRss},
+                            {name: "Waspmote", logo: logoRss}
+                        ]
+                    }     
+                />
+                <EducationComponent
+                    title={'Degree in Computer Engineering with a major in Computer Science'}
+                    corporation={'ULPGC'}
+                    from={'Jun 2016'}
+                    to={'Jul 2020'}
+                    place={'Las Palmas de Gran Canaria'}
+                    web={'www.eii.ulpgc.es'}
+                    logo={'https://picsum.photos/200'}
+                    description={'The programme offers a comprehensive training in computer science with a focus on multidisciplinary research and innovation tasks. It prepares students for a range of tasks, from theoretical analysis to software development, addressing topics such as algorithms and computational complexity, systems modelling and analysis, user interface design and evaluation, intelligent systems and data mining, advanced numerical methods, language processing and Semantic Web technologies. This approach combines theoretical foundations with practical tools, enabling students to solve complex problems and develop innovative solutions. Grade: 8.163'}
+                    technologies={
+                        [
+                            {name: "Python", logo: logoPython},
+                            {name: "Java", logo: logoRss},
+                            {name: "Matlab", logo: logoRss},
+                            {name: "Arduino", logo: logoRss},
+                            {name: "Linux", logo: logoRss}
+                        ]
                     }     
                 />
             </IonAccordionGroup>

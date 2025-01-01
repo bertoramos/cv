@@ -1,6 +1,11 @@
 
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
-import { globe, location, logoAndroid, logoDocker, logoHtml5, logoPython, logoRss } from 'ionicons/icons';
+import { globe, location, logoHtml5, logoRss } from 'ionicons/icons';
+
+import { logoCpp, logoPython, logoRos, logoDocker, logoNvidia } from '../private/assets/logos';
+//import logoPython from '../private/assets/logos/logoPython.svg';
+//import logoCpp from '../private/assets/logos/logoCpp.svg';
+
 import './Experience.css';
 
 interface ExperienceComponentProps {
@@ -118,11 +123,10 @@ const Experience: React.FC = () => {
                     description={'"Investigo" programme: "IngenIoT". Improving the perception of the underwater environment through 3D reconstruction and analysis of campaign data.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
-                         { name: "C++", logo: logoRss },
-                         { name: "ROS1", logo: logoRss},
-                         { name: "ROS1", logo: logoRss},
+                         { name: "C++", logo: logoCpp },
+                         { name: "ROS1", logo: logoRos},
                          { name: "Docker", logo: logoDocker},
-                         { name: "NVIDIA Jetson", logo: logoRss}
+                         { name: "NVIDIA Jetson", logo: logoNvidia}
                         ]
                     }
                     references={
