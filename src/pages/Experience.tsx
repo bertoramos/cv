@@ -1,9 +1,7 @@
 
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
-import './Experience.css';
 import { globe, location, logoAndroid, logoDocker, logoHtml5, logoPython, logoRss } from 'ionicons/icons';
-
-
+import './Experience.css';
 
 interface ExperienceComponentProps {
     title: string;
@@ -27,7 +25,7 @@ interface ExperienceComponentProps {
 const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
     return (
         <IonAccordion>
-            <IonItem  className="experience-slot" slot="header">
+            <IonItem className="experience-slot" slot="header">
                 <IonLabel className='ion-text-start'>{props.title} @ {props.company}</IonLabel>
                 <IonLabel className='ion-text-end'>{props.from} - {props.to}</IonLabel>
             </IonItem>
@@ -91,8 +89,8 @@ const Experience: React.FC = () => {
                 <ExperienceComponent
                     title={'Data scientist'}
                     company={'Fundación Universitaria de Las Palmas (FULP)'}
-                    from={'December 2023'}
-                    to={'December 2024'}
+                    from={'Dec 2023'}
+                    to={'Dec 2024'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'www.fulp.es'}
                     logo={'https://picsum.photos/200'}
@@ -117,7 +115,7 @@ const Experience: React.FC = () => {
                     place={'Las Palmas de Gran Canaria'}
                     web={'https://www.ssmrovs.com/'}
                     logo={'https://picsum.photos/200'}
-                    description={'"Investigo" programme: "IngenIoT". Improved perception of underwater environments through 3D reconstruction and analysis of data captured in campaigns.'}
+                    description={'"Investigo" programme: "IngenIoT". Improving the perception of the underwater environment through 3D reconstruction and analysis of campaign data.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
                          { name: "C++", logo: logoRss },

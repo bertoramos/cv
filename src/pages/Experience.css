@@ -44,3 +44,8 @@
     font-family: "Source Code Pro Light", sans-serif;
 }
 
+.experience-slot {
+    @media screen and (max-width: 768px) {
+        font-size: 70%;
+    }
+}
