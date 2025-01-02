@@ -45,7 +45,7 @@ const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
                     <IonCardContent>
                         <IonRow>
                             <IonCol offset="0" size="12" size-md="2" push-md="9.5" className="ion-text-center">
-                                <img style={{ margin: "auto" }} src={props.logo} alt={props.logo} />
+                                <img style={{ margin: "auto", height: "50%" }} src={props.logo} alt={props.logo} />
                             </IonCol>
                             <IonCol size="12" size-md="9" pull-md="2">
                                 <div>{props.description}</div>
@@ -80,7 +80,7 @@ const Education: React.FC = () => {
                     to={'Present'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'https://www2.ulpgc.es/plan-estudio/6024'}
-                    logo={'https://picsum.photos/200'}
+                    logo={'/cv/assets/logos/logoDoctorado.svg'}
                     description={'A multidisciplinary programme focusing on the development and management of information, communication and knowledge technologies and their socio-economic impact.'}
                     technologies={
                         []
@@ -93,7 +93,7 @@ const Education: React.FC = () => {
                     to={'Sep 2022'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'www.siani.es'}
-                    logo={'https://picsum.photos/200'}
+                    logo={'/cv/assets/logos/logoSIANI.svg'}
                     description={'The programme has been designed to equip students with the necessary skills and tools to initiate R&D&I activities in areas such as artificial intelligence and numerical applications in engineering. The programme is taught by the University Institute of Intelligent Systems and Numerical Applications in Engineering (SIANI), a research and teaching centre for postgraduate studies attached to the ULPGC. Grade: 9.505'}
                     technologies={
                         [
@@ -111,7 +111,7 @@ const Education: React.FC = () => {
                     to={'Jul 2020'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'www.eii.ulpgc.es'}
-                    logo={'https://picsum.photos/200'}
+                    logo={'/cv/assets/logos/logoEII.svg'}
                     description={'The programme offers a comprehensive training in computer science with a focus on multidisciplinary research and innovation tasks. It prepares students for a range of tasks, from theoretical analysis to software development, addressing topics such as algorithms and computational complexity, systems modelling and analysis, user interface design and evaluation, intelligent systems and data mining, advanced numerical methods, language processing and Semantic Web technologies. This approach combines theoretical foundations with practical tools, enabling students to solve complex problems and develop innovative solutions. Grade: 8.163'}
                     technologies={
                         [
