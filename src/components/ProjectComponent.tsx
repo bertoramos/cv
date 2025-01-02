@@ -21,7 +21,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
     const dismiss = () => {
         modal.current?.dismiss(null, 'backdrop');
     };
-
+    
     return (
         <IonModal className="project-detail-modal" ref={modal} trigger={props.modal_trigger}>
             <IonHeader style={{ "--background": "#54d61c", "--ion-background-color": "red" }}>
@@ -35,13 +35,13 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
             <IonContent className="project-detail-modal-content ion-padding">
                 <IonGrid>
                     <IonRow>
-                        <IonCol size="12" size-md="6">
-                            <IonTitle className="ion-text-center ion-padding-bottom">
+                        <IonCol size="12" size-md="8">
+                            <p style= {{textAlign: "center", fontWeight: "bold"}} className="project-detail-justify">
                                 {props.title}
-                            </IonTitle>
-                            <IonText className="ion-text-justify ion-padding-bottom">
+                            </p>
+                            <p className="project-detail-justify">
                                 {props.description}
-                            </IonText>
+                            </p>
                             <div className="ion-padding">
                                 <a 
                                     href={props.url}
@@ -60,8 +60,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
                                 }
                             </div>
                         </IonCol>
-                        <IonCol size="12" size-md="6" className="ion-text-center">
-                            <img style={{height: "50%"}} src={props.image} alt={props.title} />
+                        <IonCol size="12" size-md="4" className="ion-text-center">
+                            <img style={{height: "70%"}} src={props.image} alt={props.title} />
                         </IonCol>
                     </IonRow>
                 </IonGrid>

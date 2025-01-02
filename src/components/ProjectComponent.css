@@ -121,3 +121,8 @@
     color: var(--app_main_text_color);
     font-family: "Source Code Pro Light";
 }
+
+.project-detail-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
