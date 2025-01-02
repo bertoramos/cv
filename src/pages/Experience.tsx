@@ -51,7 +51,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
                     <IonCardContent>
                         <IonRow>
                             <IonCol size="12" size-md="2" push-md="9.5" className='ion-text-center'>
-                                <img style={{ margin: "auto" }} src={props.logo} alt="" />
+                                <img style={{ margin: "auto", height: "40%" }} src={props.logo} alt="" />
                             </IonCol>
                             <IonCol size="12" size-md="9" pull-md="2">
                                 <div>{props.description}</div>
@@ -98,7 +98,7 @@ const Experience: React.FC = () => {
                     to={'Dec 2024'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'www.fulp.es'}
-                    logo={'https://picsum.photos/200'}
+                    logo={'/cv/assets/logos/logoFULP.svg'}
                     description={'"Investigo" programme: "SMART GIP: Applying Artificial Intelligence (AI) to Integrated Project Management". Optimization of key processes through development through the development of a platform for payroll management and electronic invoicing.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
@@ -119,7 +119,7 @@ const Experience: React.FC = () => {
                     to={'Jul 2023'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'https://www.ssmrovs.com/'}
-                    logo={'https://picsum.photos/200'}
+                    logo={'/cv/assets/logos/logoSSM.svg'}
                     description={'"Investigo" programme: "IngenIoT". Improving the perception of the underwater environment through 3D reconstruction and analysis of campaign data.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
@@ -140,7 +140,7 @@ const Experience: React.FC = () => {
                     to={'Ene 2020'}
                     place={'Las Palmas de Gran Canaria'}
                     web={'https://ciberlandia.org'}
-                    logo={'https://picsum.photos/200'}
+                    logo={'/cv/assets/logos/logoEII.svg'}
                     description={'Computer science internships. Support in the design and development of activities for the Cyberlandia Project and the Science Week.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
