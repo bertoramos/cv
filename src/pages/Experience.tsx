@@ -1,8 +1,8 @@
 
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
-import { globe, location, logoHtml5, logoRss } from 'ionicons/icons';
+import { globe, location, logoHtml5, logoLaravel, logoRss } from 'ionicons/icons';
 
-import { logoCpp, logoPython, logoRos, logoDocker, logoNvidia } from '../private/assets/logos';
+import { logoCpp, logoPython, logoRos, logoDocker, logoNvidia, logoInkscape, logoSpacy, logoPHP, logoHTML, logoEV3 } from '../private/assets/logos';
 //import logoPython from '../private/assets/logos/logoPython.svg';
 //import logoCpp from '../private/assets/logos/logoCpp.svg';
 
@@ -102,9 +102,11 @@ const Experience: React.FC = () => {
                     description={'"Investigo" programme: "SMART GIP: Applying Artificial Intelligence (AI) to Integrated Project Management". Optimization of key processes through development through the development of a platform for payroll management and electronic invoicing.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
-                         { name: "Spacy", logo: logoRss },
-                         { name: "PHP", logo: logoRss},
-                         { name: "HTML/CSS", logo: logoHtml5}]
+                        { name: "Spacy", logo: logoSpacy },
+                        { name: "PHP", logo: logoPHP },
+                        { name: "HTML/CSS", logo: logoHTML },
+                        { name: "Laravel", logo: logoLaravel }
+                        ]
                     }
                     references={
                         [
@@ -118,15 +120,15 @@ const Experience: React.FC = () => {
                     from={'Jan 2022'}
                     to={'Jul 2023'}
                     place={'Las Palmas de Gran Canaria'}
-                    web={'https://www.ssmrovs.com/'}
+                    web={'www.ssmrovs.com/'}
                     logo={'/cv/assets/logos/logoSSM.svg'}
                     description={'"Investigo" programme: "IngenIoT". Improving the perception of the underwater environment through 3D reconstruction and analysis of campaign data.'}
                     technologies={
                         [{ name: "Python", logo: logoPython },
-                         { name: "C++", logo: logoCpp },
-                         { name: "ROS1", logo: logoRos},
-                         { name: "Docker", logo: logoDocker},
-                         { name: "NVIDIA Jetson", logo: logoNvidia}
+                        { name: "C++", logo: logoCpp },
+                        { name: "ROS1", logo: logoRos },
+                        { name: "Docker", logo: logoDocker },
+                        { name: "NVIDIA Jetson", logo: logoNvidia }
                         ]
                     }
                     references={
@@ -139,17 +141,19 @@ const Experience: React.FC = () => {
                     from={'Sep 2019'}
                     to={'Ene 2020'}
                     place={'Las Palmas de Gran Canaria'}
-                    web={'https://ciberlandia.org'}
+                    web={'www.ciberlandia.org'}
                     logo={'/cv/assets/logos/logoEII.svg'}
                     description={'Computer science internships. Support in the design and development of activities for the Cyberlandia Project and the Science Week.'}
                     technologies={
-                        [{ name: "Python", logo: logoPython },
-                         { name: "Inkscape", logo: logoRss}
+                        [
+                            { name: "Python", logo: logoPython },
+                            { name: "Lego Mindstorm EV3", logo: logoEV3 },
+                            { name: "Inkscape", logo: logoInkscape }
                         ]
                     }
                     references={
                         [
-                            {name: "Semana de la Ciencia 2019", url: "https://ciberlandia.org/semanas-de-la-ciencia-y-la-innovacion-en-canarias-2019-gran-canaria/"}
+                            { name: "Semana de la Ciencia 2019", url: "https://ciberlandia.org/semanas-de-la-ciencia-y-la-innovacion-en-canarias-2019-gran-canaria/" }
                         ]
                     }
                 />

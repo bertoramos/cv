@@ -3,6 +3,7 @@ import { IonContent } from '@ionic/react';
 import './Projects.css';
 import ProjectComponent from '../components/ProjectComponent';
 import { logoRss } from 'ionicons/icons';
+import { logoAndroid, logoBLE, logoBlender, logoLatex, logoMarvelmind, logoPython } from '../private/assets/logos';
 
 const Projects: React.FC = () => {
 
@@ -18,11 +19,11 @@ const Projects: React.FC = () => {
                         url={'http://hdl.handle.net/10553/118069'}
                         image={'/cv/assets/images/projects/drone_tfm.webp'}
                         technologies={[
-                            { name: "Android", logo: logoRss },
-                            { name: "Blender", logo: logoRss },
-                            { name: "BLE", logo: logoRss},
-                            { name: "Marvelmind", logo: logoRss},
-                            { name: "Latex", logo: logoRss}
+                            { name: "Android", logo: logoAndroid },
+                            { name: "Blender", logo: logoBlender },
+                            { name: "BLE", logo: logoBLE},
+                            { name: "Marvelmind", logo: logoMarvelmind},
+                            { name: "Latex", logo: logoLatex}
                         ]}
                     />
                 </div>
@@ -35,9 +36,9 @@ const Projects: React.FC = () => {
                         url={'http://hdl.handle.net/10553/77830'}
                         image={'/cv/assets/images/projects/blender_tfg.webp'}
                         technologies={[
-                            { name: "Python", logo: logoRss },
-                            { name: "Blender", logo: logoRss },
-                            { name: "Latex", logo: logoRss }
+                            { name: "Python", logo: logoPython },
+                            { name: "Blender", logo: logoBlender },
+                            { name: "Latex", logo: logoLatex }
                         ]}
                     />
                 </div>

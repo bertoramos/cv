@@ -2,7 +2,7 @@
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
 import './Education.css';
 import { globe, location, logoAndroid, logoRss } from 'ionicons/icons';
-import { logoCpp, logoPython } from '../private/assets/logos';
+import { logoArduino, logoCpp, logoJava, logoLibelium, logoLinux, logoMatlab, logoPython, logoPytorch, logoWaspmote } from '../private/assets/logos';
 
 
 
@@ -99,8 +99,8 @@ const Education: React.FC = () => {
                         [
                             {name: "Python", logo: logoPython},
                             {name: "C++", logo: logoCpp},
-                            {name: "Pytorch", logo: logoRss},
-                            {name: "Waspmote", logo: logoRss}
+                            {name: "Pytorch", logo: logoPytorch},
+                            {name: "Waspmote", logo: logoLibelium}
                         ]
                     }     
                 />
@@ -116,10 +116,10 @@ const Education: React.FC = () => {
                     technologies={
                         [
                             {name: "Python", logo: logoPython},
-                            {name: "Java", logo: logoRss},
-                            {name: "Matlab", logo: logoRss},
-                            {name: "Arduino", logo: logoRss},
-                            {name: "Linux", logo: logoRss}
+                            {name: "Java", logo: logoJava},
+                            {name: "Matlab", logo: logoMatlab},
+                            {name: "Arduino", logo: logoArduino},
+                            {name: "Linux", logo: logoLinux}
                         ]
                     }     
                 />
