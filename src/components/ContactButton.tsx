@@ -73,7 +73,7 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                                 </div>
                             </IonCol>
                             <IonCol size="12" size-md="5.5" className="ion-text-center">
-                                <img src="https://picsum.photos/400" alt="" />
+                                <img src="/cv/assets/images/contact/contact2.jpg" alt="" />
                             </IonCol>
                         </IonRow>
 
