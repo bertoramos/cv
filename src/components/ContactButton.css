@@ -46,3 +46,26 @@
     color: var(--app_main_text_color);
     font-family: "Source Code Pro Light";
 }
+
+.contact-text-container {
+    margin: auto 0;
+    /* Vertically center the div */
+    width: 50%;
+    /* Optional: set the width */
+    height: 100px;
+    /* Optional: set the height */
+    background-color: #f0f0f0;
+    /* For visual clarity */
+}
+
+ion-row {
+    height: 100%;
+    /* Ensure the row takes the full height of its container */
+    align-items: center;
+    /* Align columns vertically */
+}
+
+#contact-image {
+    width: 80%;
+    height: 10%;
+}

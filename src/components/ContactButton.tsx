@@ -32,48 +32,50 @@ const ContactButton: React.FC<ContactButtonProps> = (props) => {
                 <IonContent className="contact-modal-content ion-padding">
                     <IonGrid>
                         <IonRow>
-                            <IonCol size="12" size-md="6" offset="0" offset-md="0.5">
-                                <p>Get in touch!</p>
-                                <p>
-                                    Hey! 🤗 Feel free to send me an email at <a href="mailto:albertoramossanchez@outlook.es">albertoramossanchez@outlook.es</a> or contact me on social media.
-                                </p>
-                                <div>
-                                    <IonButton
-                                        href="mailto:albertoramossanchez@outlook.es"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        shape="round"
-                                        fill="clear">
-                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={mailOutline} />
-                                    </IonButton>
-                                    <IonButton
-                                        href="https://www.linkedin.com/in/alberto-rs/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        shape="round"
-                                        fill="clear">
-                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoLinkedin} />
-                                    </IonButton>
-                                    <IonButton
-                                        href="https://github.com/bertoramos"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        shape="round"
-                                        fill="clear">
-                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoGithub} />
-                                    </IonButton>
-                                    <IonButton
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        shape="round"
-                                        fill="clear"
-                                        href={CV_URL}>
-                                        <IonIcon className="ion-padding" size="large" slot="icon-only" icon={download} /> <span style={{"textAlign": "center", "fontFamily": "Source Code Pro Black"}}>resume</span>
-                                    </IonButton>
+                            <IonCol id="contact-text-col" size="12" size-md="6" offset="0" offset-md="0.5">
+                                <div id="contact-text-container">
+                                    <h1>Get in touch!</h1>
+                                    <p>
+                                        Hey! 🤗 Feel free to send me an email at <a href="mailto:albertoramossanchez@outlook.es">albertoramossanchez@outlook.es</a> or contact me on social media.
+                                    </p>
+                                    <div id="contact-buttons-container">
+                                        <IonButton
+                                            href="mailto:albertoramossanchez@outlook.es"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            shape="round"
+                                            fill="clear">
+                                            <IonIcon className="ion-padding" size="large" slot="icon-only" icon={mailOutline} />
+                                        </IonButton>
+                                        <IonButton
+                                            href="https://www.linkedin.com/in/alberto-rs/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            shape="round"
+                                            fill="clear">
+                                            <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoLinkedin} />
+                                        </IonButton>
+                                        <IonButton
+                                            href="https://github.com/bertoramos"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            shape="round"
+                                            fill="clear">
+                                            <IonIcon className="ion-padding" size="large" slot="icon-only" icon={logoGithub} />
+                                        </IonButton>
+                                        <IonButton
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            shape="round"
+                                            fill="clear"
+                                            href={CV_URL}>
+                                            <IonIcon className="ion-padding" size="large" slot="icon-only" icon={download} /> <span style={{ "textAlign": "center", "fontFamily": "Source Code Pro Black" }}>resume</span>
+                                        </IonButton>
+                                    </div>
                                 </div>
                             </IonCol>
                             <IonCol size="12" size-md="5.5" className="ion-text-center">
-                                <img src="/cv/assets/images/contact/contact2.jpg" alt="" />
+                                <img id="contact-image" src="/cv/assets/images/contact/contact_2.jpeg" alt="" />
                             </IonCol>
                         </IonRow>
 
