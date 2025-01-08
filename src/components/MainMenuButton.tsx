@@ -12,8 +12,9 @@ const MainMenuButton: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }> 
         <img
           style={{
             opacity: !isOpen ? "1" : "0",
-            transition: "all .4s",
+            transition: "all .4s ease-in-out",
             visibility: isOpen ? "hidden" : "visible",
+            
           }}
           src="/cv/favicon_big.png"
           alt="favicon"
