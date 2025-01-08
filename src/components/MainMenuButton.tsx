@@ -8,9 +8,18 @@ const MainMenuButton: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }> 
   return (
     <>
       <a id="main_logo" href="/cv/#/">
-        <IonIcon icon={logoIonic} color="primary"></IonIcon>
+        {/*<IonIcon icon={logoIonic} color="primary"></IonIcon>*/}
+        <img
+          style={{
+            opacity: !isOpen ? "1" : "0",
+            transition: "all .4s",
+            visibility: isOpen ? "hidden" : "visible",
+          }}
+          src="/cv/favicon_original.png"
+          alt="favicon"
+        />
       </a>
-      
+
       <div onClick={toggleMainMenu} className="button-container">
         <div className={isOpen ? "close-menu-button" : "open-menu-button"} />
       </div>
