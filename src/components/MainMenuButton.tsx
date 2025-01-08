@@ -15,7 +15,7 @@ const MainMenuButton: React.FC<{ toggleMainMenu: () => void; isOpen: boolean }> 
             transition: "all .4s",
             visibility: isOpen ? "hidden" : "visible",
           }}
-          src="/cv/favicon_original.png"
+          src="/cv/favicon_big.png"
           alt="favicon"
         />
       </a>
