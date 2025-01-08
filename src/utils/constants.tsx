@@ -1,2 +1,2 @@
 
-export const CV_URL = "https://www.orimi.com/pdf-test.pdf";
+export const CV_URL = "/cv/assets/pdf/cv.pdf";
