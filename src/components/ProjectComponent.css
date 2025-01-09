@@ -126,3 +126,15 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+.project-detail-text-column {
+    padding: 0% 5% 0% 5%;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.project-detail-image-column {
+    
+}

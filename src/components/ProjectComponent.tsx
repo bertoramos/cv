@@ -35,7 +35,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
             <IonContent className="project-detail-modal-content ion-padding">
                 <IonGrid>
                     <IonRow>
-                        <IonCol size="12" size-md="8">
+                        <IonCol className="project-detail-text-column" size="12" size-md="8">
                             <p style= {{textAlign: "center", fontWeight: "bold"}} className="project-detail-justify">
                                 {props.title}
                             </p>
@@ -60,7 +60,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = (props) => {
                                 }
                             </div>
                         </IonCol>
-                        <IonCol size="12" size-md="4" className="ion-text-center">
+                        <IonCol size="12" size-md="4" className="project-detail-image-column ion-text-center">
                             <img style={{height: "70%"}} src={props.image} alt={props.title} />
                         </IonCol>
                     </IonRow>
