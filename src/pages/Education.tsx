@@ -2,7 +2,7 @@
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCardContent, IonCardHeader, IonChip, IonCol, IonContent, IonIcon, IonItem, IonLabel, IonRow, IonTitle } from '@ionic/react';
 import './Education.css';
 import { globe, location, logoAndroid, logoRss } from 'ionicons/icons';
-import { logoArduino, logoCpp, logoJava, logoLibelium, logoLinux, logoMatlab, logoPython, logoPytorch, logoWaspmote } from '../private/assets/logos';
+import { logoArduino, logoCpp, logoJava, logoLibelium, logoLinux, logoMatlab, logoPython, logoPytorch } from '../private/assets/logos';
 
 
 
@@ -45,7 +45,7 @@ const EducationComponent: React.FC<EducationComponentProps> = ( props ) => {
                     <IonCardContent>
                         <IonRow>
                             <IonCol offset="0" size="12" size-md="2" push-md="9.5" className="ion-text-center">
-                                <img style={{ margin: "auto", height: "50%" }} src={props.logo} alt={props.logo} />
+                                <img className='education-component-image' src={props.logo} alt={props.logo} />
                             </IonCol>
                             <IonCol size="12" size-md="9" pull-md="2">
                                 <div>{props.description}</div>

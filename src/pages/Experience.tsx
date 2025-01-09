@@ -51,7 +51,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = (props) => {
                     <IonCardContent>
                         <IonRow>
                             <IonCol size="12" size-md="2" push-md="9.5" className='ion-text-center'>
-                                <img style={{ margin: "auto", height: "40%" }} src={props.logo} alt="" />
+                                <img className="experience-component-image" src={props.logo} alt="" />
                             </IonCol>
                             <IonCol size="12" size-md="9" pull-md="2">
                                 <div>{props.description}</div>
