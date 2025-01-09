@@ -1,13 +1,13 @@
 
-import { IonCol, IonContent, IonGrid, IonImg, IonRow } from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonIcon, IonImg, IonRow } from '@ionic/react';
 import './Home.css';
+import { logoLibelium } from '../private/assets/logos';
 
 const Home: React.FC = () => {
     return (
         <IonContent id="home-content">
             <IonGrid id="home-grid">
                 <IonRow style={{ height: '100%' }}>
-
                     <IonCol
                         id="home-image-column"
                         size="12"
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
                             <p id="home-subtitle">
                                 I'm computer scientist from<br />
                                 Canary Island, Spain
-                            </p>
+                            </p>                            
                         </div>
                     </IonCol>
                 </IonRow>
