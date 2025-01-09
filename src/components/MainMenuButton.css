@@ -75,12 +75,12 @@
 #main_logo {
     position: absolute;
     left: 3%;
-    top: 3%;
+    top: 1.5%;
     padding: 1% 1% 1% 1%;
 
     z-index: 1000;
     display: inline-block;
-    width: 8%;
+    width: 7%;
     height: auto;
 
     @media screen and (max-width: 768px) {
